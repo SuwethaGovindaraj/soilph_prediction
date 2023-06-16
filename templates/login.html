@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+	<style>
+		body {
+			background: url('https://img.freepik.com/free-vector/green-maize-plants-sandy-road-corn-fields-wooden-post-with-arrows-traffic-signs-farm-agricultural-landscape-natural-scene-cartoon-illustration_107791-4344.jpg') no-repeat center center fixed;
+			background-size: cover;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			margin: 100px auto;
+			padding: 40px;
+			width: 400px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		input[type="text"], input[type="password"] {
+			border: none;
+			border-radius: 4px;
+			box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+			margin: 10px 0;
+			padding: 10px;
+			width: 100%;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 4px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+			padding: 10px;
+			width: 100%;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.btn-back {
+  background-color: #E7500E;
+  border-color: #E7500E;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.btn-back:hover {
+  background-color: #fff;
+  color: #E7500E;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Login <span style='font-size:50px;'>&#127811;</span></h1>
+		<form action="/login" method="POST">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<input type="submit" value="Log In">
+		</form>
+		<p>{{msg}}</p>
+		<a href="/" class="btn btn-danger btn-back" style="position: absolute; top: 20px; right: 20px;">Back</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crop price Prediction</title>
+	<style>
+		body {
+			background-image: url('https://img.freepik.com/free-vector/outdoor-farm-market-stalls-wooden-fair-booths-kiosks-with-striped-awning-farmer-food-honey-dairy-products-vegetables-wood-vendor-counters-street-trading-cartoon-vector-illustration_107791-10531.jpg');
+		     
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #339933;
+}
+
+	</style>
+</head>
+<body>
+	<h1>PREDICT CROP PRICE HERE</h1>
+	<form>
+		<label for="state">State:</label>
+		<input type="text" id="state" name="state" placeholder="Enter state name...">
+
+		<label for="district">District:</label>
+		<input type="text" id="district" name="district" placeholder="Enter district name...">
+
+		<label for="market">Market:</label>
+		<input type="text" id="market" name="market" placeholder="Enter market name...">
+
+		<label for="commodity">Commodity:</label>
+		<input type="text" id="commodity" name="commodity" placeholder="Enter commodity name...">
+
+		<label for="min_price">Minimum Price:</label>
+		<input type="text" id="min_price" name="min_price" placeholder="Enter minimum price...">
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
